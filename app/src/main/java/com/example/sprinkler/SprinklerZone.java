@@ -16,63 +16,46 @@
 package com.example.sprinkler;
 
 /**
- * An {@link SprinklerZone} object contains information related to a single earthquake.
+ * An {@link SprinklerZone} object contains information related to a single Zone.
  */
 public class SprinklerZone {
 
-    /** Magnitude of the earthquake */
-    private double mMagnitude;
+    /** NAme of the Zone*/
+    private String name;
 
-    /** Location of the earthquake */
-    private String mLocation;
+    /** Duration of the Zone */
+    private int duration;
 
-    /** Time of the earthquake */
-    private long mTimeInMilliseconds;
+    /** Enabled status of the zone*/
+    private boolean enabled;
 
-    /** Website URL of the earthquake */
-    private String mUrl;
-
-    /**
-     * Constructs a new {@link SprinklerZone} object.
-     *
-     * @param magnitude is the magnitude (size) of the earthquake
-     * @param location is the location where the earthquake happened
-     * @param timeInMilliseconds is the time in milliseconds (from the Epoch) when the
-     *                           earthquake happened
-     * @param url is the website URL to find more details about the earthquake
-     */
-    public SprinklerZone(double magnitude, String location, long timeInMilliseconds, String url) {
-        mMagnitude = magnitude;
-        mLocation = location;
-        mTimeInMilliseconds = timeInMilliseconds;
-        mUrl = url;
+    public SprinklerZone(String name, int duration, boolean enabled) {
+        this.name = name;
+        this.duration = duration;
+        this.enabled = enabled;
     }
 
-    /**
-     * Returns the magnitude of the earthquake.
-     */
-    public double getMagnitude() {
-        return mMagnitude;
+    public String getName() {
+        return name;
     }
 
-    /**
-     * Returns the location of the earthquake.
-     */
-    public String getLocation() {
-        return mLocation;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    /**
-     * Returns the time of the earthquake.
-     */
-    public long getTimeInMilliseconds() {
-        return mTimeInMilliseconds;
+    public int getDuration() {
+        return duration;
     }
 
-    /**
-     * Returns the website URL to find more information about the earthquake.
-     */
-    public String getUrl() {
-        return mUrl;
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }
