@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zone_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="32dp"
+    tools:context="com.example.sprinkler.ManualControl">
+
+
+    <LinearLayout
+        android:id="@+id/teams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingTop="16dp"
+
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zone_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 1"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/duration_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Duration in Minutes"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="56sp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/add_minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addMinute"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/subtract_minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="subtractMinute"
+                android:text="-" />
+
+            <Switch
+                android:id="@+id/enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enabled"
+                android:checked="true"
+                />
+
+            <View
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                >
+            </View>
+
+            <Button
+                android:id="@+id/run_once"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="runOnce"
+                android:text="Run Once" />
+
+            <Button
+                android:id="@+id/stop_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="stopRun"
+                android:text="Stop Run" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+        android:text="reset" />
+</RelativeLayout>

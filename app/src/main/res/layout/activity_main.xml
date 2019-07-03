@@ -6,45 +6,44 @@
     android:paddingBottom="32dp"
     tools:context="com.example.sprinkler.MainActivity">
 
-
     <LinearLayout
-        android:id="@+id/sprinkler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:paddingTop="16dp"
-
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/zones"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginBottom="16dp"
+            android:text="All Zones"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center" />
 
-            <TextView
-                android:id="@+id/zone_list_label"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Zone List"
-                android:textSize="14sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textAlignment="center" />
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="History"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center" />
 
-            <TextView
-                android:id="@+id/zone_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Zone 1"
-                android:textSize="14sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:background="?android:attr/selectableItemBackground"
-                android:textAlignment="center" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Run All"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:onClick="manualRunAll"/>
     </LinearLayout>
+
 </RelativeLayout>

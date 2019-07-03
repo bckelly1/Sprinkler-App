@@ -29,6 +29,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name=".SprinklerHistory"
+            android:label="History"
+            />
+        <activity
+            android:name=".ManualControl"
+            android:label="Manual Control"
+            />
+        <activity
+            android:name=".SprinklerZones"
+            android:label="Zones"/>
     </application>
 
 </manifest>

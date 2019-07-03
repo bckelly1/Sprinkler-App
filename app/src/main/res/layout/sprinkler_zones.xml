@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="32dp"
+    tools:context="com.example.sprinkler.SprinklerZones">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/emptyTextView"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        />
+
+    <!-- Layout for a list of sprinkler zones -->
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_sprinkler_zones"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/sprinkler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingTop="16dp"
+
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zone_list_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone List"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 1"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 2"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 3"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 4"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 5"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 6"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 7"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
