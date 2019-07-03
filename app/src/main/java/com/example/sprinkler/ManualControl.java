@@ -26,7 +26,7 @@ public class ManualControl extends AppCompatActivity {
 
     private void displayMessage(int points) {
         TextView priceTextView = findViewById(R.id.duration);
-        priceTextView.setText(""+points);
+        priceTextView.setText(String.valueOf(points));
     }
 
     public void addMinute(View view) {
