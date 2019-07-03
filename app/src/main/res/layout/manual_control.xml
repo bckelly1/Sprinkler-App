@@ -78,6 +78,14 @@
                 android:checked="true"
                 />
 
+            <Button
+                android:id="@+id/save_sprinkler_zone_config"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:onClick="save"
+                />
+
             <View
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="32dp"

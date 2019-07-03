@@ -133,6 +133,30 @@
                 android:fontFamily="sans-serif-medium"
                 android:background="?android:attr/selectableItemBackground"
                 android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 8"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/zone_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Zone 9"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAlignment="center" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

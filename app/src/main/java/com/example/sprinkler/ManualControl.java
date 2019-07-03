@@ -52,6 +52,10 @@ public class ManualControl extends AppCompatActivity {
 
     }
 
+    public void save(View view) {
+        // TODO: Save content and persist state
+    }
+
     public void reset(View view) {
         teamPointsA = 5;
         displayMessage(teamPointsA);
@@ -59,6 +63,8 @@ public class ManualControl extends AppCompatActivity {
         addButton.setEnabled(true);
         Button subtractButton = findViewById(R.id.subtract_minute);
         subtractButton.setEnabled(true);
+        Switch enabledSwitch = findViewById(R.id.enabled);
+        enabledSwitch.setChecked(true);
     }
 
     public void runOnce(View view){
